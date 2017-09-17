@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Boa Viagem</string>
+    <string name="erro_autenticacao">Usuario ou Senha Invalidos !!!</string>
+    <string name="nova_viagem">Nova Viagem</string>
+    <string name="minhas_viagens">Minhas Viagens</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="usuario">Usuario</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="destino">Destino</string>
+    <string name="tipo_viagem">Tipo da Viagem</string>
+    <string name="radio_lazer">Lazer</string>
+    <string name="radio_negocios">Negócios</string>
+    <string name="data_chegada">Data da Chegada</string>
+    <string name="data_saida">Data da Saida</string>
+    <string name="selecione">Selecione</string>
+    <string name="orcamento">Orçamento</string>
+    <string name="qtd_pessoas">Quantidade de Pessoas:</string>
+    <string name="salvar_viagem">Criar nova viagem</string>
+    <string name="preferencias">Preferências</string>
+    <string name="modo_viagem">Modo Viagem</string>
+    <string name="modo_viagem_sumario">Determina a viagem ativa com base na data atual</string>
+    <string name="informe_valor_limite">Informe o valor limite em (%)</string>
+    <string name="valor_limite_sumario">Notifica quando os gastos ultrapassarem o percentual informado</string>
+    <string name="valor_limite">Alerta de gastos</string>
+    <string name="novo_gasto">Novo gasto</string>
+
+
+
+</resources>
