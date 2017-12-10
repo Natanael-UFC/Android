@@ -12,13 +12,16 @@
         <activity android:name=".BoaViagem">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".Dashboard"></activity>
         <activity android:name=".Nova_viagem"></activity>
-        <activity android:name=".ConfiguracoesActivity"></activity>
+        <activity android:name=".Configuracoes"></activity>
+        <activity android:name=".MainViagem"></activity>
+        <activity android:name=".ListaViagens"></activity>
+        <activity android:name=".ListaGastos"></activity>
+        <activity android:name=".Novo_gasto"></activity>
     </application>
 
 </manifest>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#000000">
     
     <TableLayout
         android:layout_width="match_parent"
@@ -18,41 +19,62 @@
                 android:layout_gravity="center"
                 android:text="@string/nova_viagem"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
         </LinearLayout>
 
-        <TextView android:text="@string/destino"/>
+        <TextView android:text="@string/destino"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
         <EditText
             android:id="@+id/destino"
-            android:inputType="text"/>
+            android:inputType="text"
+            android:background="#FFFFFF"
+            android:layout_height="35dp"/>
 
         <TextView
-            android:text="@string/tipo_viagem"/>
+            android:text="@string/tipo_viagem"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
 
         <RadioGroup
             android:id="@+id/Tipo_viagem"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
             <RadioButton
                 android:id="@+id/lazer"
                 android:checked="true"
                 android:text="@string/radio_lazer"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_marginLeft="30dp"/>
+                android:layout_marginLeft="30dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:buttonTint="#FFFFFF" />
             <RadioButton
                 android:id="@+id/negocios"
                 android:layout_marginLeft="80dp"
                 android:text="@string/radio_negocios"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:buttonTint="#FFFFFF"/>
         </RadioGroup>
         <TableRow>
             <TextView
+                android:layout_marginTop="10dp"
                 android:text="@string/data_chegada"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
             <TextView
+                android:layout_marginTop="10dp"
                 android:text="@string/data_saida"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
         </TableRow>
         <TableRow>
             <Button
@@ -65,22 +87,35 @@
                 android:onClick="selecionar_data"/>
         </TableRow>
 
-        <TextView android:text="@string/orcamento"/>
+        <TextView android:text="@string/orcamento"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
 
         <EditText
             android:id="@+id/orcamento_viagem"
-            android:inputType="numberDecimal"/>
+            android:inputType="numberDecimal"
+            android:background="#FFFFFF"
+            android:layout_height="35dp"/>
         <TableRow>
             <TextView
                 android:text="@string/qtd_pessoas"
-                android:layout_width="wrap_content"/>
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
             <EditText
                 android:id="@+id/qtd_pessoas"
-                android:inputType="number"/>
+                android:inputType="number"
+                android:background="#FFFFFF"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"/>
         </TableRow>
         <Button
             android:id="@+id/salvar_viagem"
-            android:text="@string/salvar_viagem"/>
+            android:text="@string/salvar_viagem"
+            android:onClick="nova_viagem"
+            android:layout_marginTop="10dp"/>
 
     </TableLayout>
 

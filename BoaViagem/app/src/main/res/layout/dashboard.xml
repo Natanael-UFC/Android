@@ -20,16 +20,17 @@
 
         <TextView
             android:id="@+id/novo_gasto"
+            android:clickable="true"
+            android:onClick="selecionarOpcao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableTop="@drawable/novo_gasto"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="80dp"
-            android:clickable="true"
-            android:drawableTop="@drawable/novo_gasto"
-            android:onClick="selecionarOpcao"
             android:text="@string/novo_gasto"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textAlignment="center"/>
 
         <TextView
             android:id="@+id/nova_viagem"
@@ -43,7 +44,8 @@
             android:onClick="selecionarOpcao"
             android:text="@string/nova_viagem"
             android:textColor="#FFFFFF"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textAlignment="center"/>
 
         <TextView
             android:id="@+id/minhas_viagens"
@@ -57,7 +59,8 @@
             android:onClick="selecionarOpcao"
             android:text="@string/minhas_viagens"
             android:textColor="#FFFFFF"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textAlignment="center"/>
 
         <TextView
             android:id="@+id/configuracoes"
@@ -70,7 +73,7 @@
             android:onClick="selecionarOpcao"
             android:text="@string/configuracoes"
             android:textColor="#FFFFFF"
-            android:textStyle="bold" />
-
+            android:textStyle="bold"
+            android:textAlignment="center"/>
     </RelativeLayout>
 </LinearLayout>

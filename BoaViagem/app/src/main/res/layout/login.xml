@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#000000">
     
     <ImageView
         android:layout_width="wrap_content"
@@ -15,26 +16,32 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/usuario"/>
+        android:text="@string/usuario"
+        android:textColor="#FFFFFF"/>
 
     <EditText
         android:id="@+id/usuario"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text">
+        android:layout_height="30dp"
+        android:inputType="text"
+        android:background="#FFFFFF"
+        android:layout_margin="5dp">
         <requestFocus />
     </EditText>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" 
-        android:text="@string/senha"/>
+        android:text="@string/senha"
+        android:textColor="#FFFFFF"/>
     
     <EditText
         android:id="@+id/senha"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"/>
+        android:layout_height="30dp"
+        android:inputType="textPassword"
+        android:background="#FFFFFF"
+        android:layout_margin="5dp"/>
 
     <Button
         android:layout_width="match_parent"

@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+/* Dupla: Natanael, Savio */
+
 public class BoaViagem extends AppCompatActivity {
     private EditText usuario;
     private EditText senha;

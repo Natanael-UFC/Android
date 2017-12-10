@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#000000" >
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0, 1, 2"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:background="#015488"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/novo_gasto"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <TextView android:text="@string/tipo"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"/>
+
+    <Spinner
+        android:id="@+id/categoria"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:prompt="@string/categoria"
+        android:backgroundTint="#FFF"
+        android:background="#FFFFFF">
+    </Spinner>
+
+    <TableRow>
+        <TextView android:text="@string/valor"
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"/>
+        <TextView android:text="@string/data"
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"/>
+    </TableRow>
+
+    <TableRow>
+        <EditText android:id="@+id/ed_valor"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="numberDecimal"
+            android:background="#FFFFFF"/>
+
+        <Button android:id="@+id/bt_data"
+            android:layout_width="match_parent"
+            android:text="Data"
+            android:onClick="escolherData"/>
+    </TableRow>
+
+    <TextView android:text="@string/descricao"
+        android:layout_width="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"/>
+    <EditText android:id="@+id/ed_descricao"
+        android:layout_width="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_height="30dp"/>
+
+    <TextView android:text="@string/local"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/local"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:prompt="@string/categoria"
+        android:backgroundTint="#FFF"
+        android:background="#FFFFFF">
+    </Spinner>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gastei!"
+        android:layout_marginTop="20dp"
+        android:onClick="novo_gasto"/>
+</TableLayout>
+</ScrollView>
