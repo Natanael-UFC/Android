@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="87dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Categorias"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp" />
+
+    <Spinner
+        android:id="@+id/categoria"
+        android:layout_width="359dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/Categorias_array"
+        android:prompt="@string/Categorias_prompt"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="13dp"
+        tools:ignore="MissingConstraints"></Spinner>
+
+    <EditText
+        android:id="@+id/nome_usuario"
+        android:layout_width="357dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:hint="Seu nome"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/categoria"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/descricao"
+        android:layout_width="355dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="8dp"
+        android:hint="Descrição"
+        android:inputType="textMultiLine"
+        android:maxLength="150"
+        app:layout_constraintTop_toBottomOf="@+id/nome_usuario"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/registrar_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="registrarFoto"
+        android:text="Registrar Foto"
+        app:layout_constraintBottom_toTopOf="@+id/fotoDenuncia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descricao" />
+
+    <ImageView
+        android:id="@+id/fotoDenuncia"
+        android:layout_width="333dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/imagem"
+        app:layout_constraintBottom_toTopOf="@+id/cancelar_denuncia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/salvar_denuncia"
+        android:onClick="salvarDenuncia"
+        android:layout_width="122dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fotoDenuncia"
+        app:layout_constraintVertical_bias="0.333"
+        android:layout_marginLeft="24dp" />
+
+    <Button
+        android:id="@+id/cancelar_denuncia"
+        android:onClick="cancelarDenuncia"
+        android:layout_width="121dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toEndOf="@+id/salvar_denuncia"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="8dp" />
+</android.support.constraint.ConstraintLayout>

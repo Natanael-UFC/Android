@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.natan.qdetective.MainActivity"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/denunciar"
+            android:layout_width="120dp"
+            android:layout_height="104dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/listar_denuncias"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:clickable="true"
+            android:onClick="selecionarOpcao"
+            android:src="@drawable/denuncia" />
+
+        <TextView
+            android:id="@+id/nova_denuncia"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/denunciar"
+            android:layout_alignStart="@+id/denunciar"
+            android:layout_below="@+id/denunciar"
+            android:text="@string/nova_denuncia"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/listar_denuncias"
+            android:layout_width="120dp"
+            android:layout_height="104dp"
+            android:clickable="true"
+            android:onClick="selecionarOpcao"
+            android:src="@drawable/listar_minhas_denuncias"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            />
+
+        <TextView
+            android:id="@+id/lista_denuncias"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/listar_denuncias"
+            android:layout_alignStart="@+id/listar_denuncias"
+            android:layout_below="@+id/listar_denuncias"
+            android:text="@string/ver_denuncias"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/servidor"
+            android:layout_width="120dp"
+            android:layout_height="104dp"
+            android:layout_alignLeft="@+id/denunciar"
+            android:layout_alignStart="@+id/denunciar"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="selecionarOpcao"
+            android:src="@drawable/servidor" />
+
+        <TextView
+            android:id="@+id/lista_denuncias_servidor"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/servidor"
+            android:layout_alignRight="@+id/servidor"
+            android:layout_below="@+id/servidor"
+            android:text="@string/obter_denuncias_webservice"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/sair"
+            android:layout_width="120dp"
+            android:layout_height="104dp"
+            android:layout_alignLeft="@+id/lista_denuncias"
+            android:layout_alignStart="@+id/lista_denuncias"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="selecionarOpcao"
+            android:src="@drawable/sair" />
+
+        <TextView
+            android:id="@+id/sairAplicacao"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sair"
+            android:layout_alignStart="@+id/sair"
+            android:layout_below="@+id/sair"
+            android:text="Sair"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

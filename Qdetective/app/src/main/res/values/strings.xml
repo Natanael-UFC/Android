@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Qdetective</string>
+    <string name="nova_denuncia">Denunciar</string>
+    <string name="excluir_denuncia">Excluir Denuncia</string>
+    <string name="ver_denuncias">Minhas Denuncias</string>
+    <string name="obter_denuncias_webservice">Baixar Denuncias</string>
+
+    <string name="Categorias_prompt">Categorias</string>
+
+    <string-array name="Categorias_array">
+        <item>VIAS PUBLICAS</item>
+        <item>EQUIPAMENTOS COMUNICATARIOS</item>
+        <item> LIMPEZA URBANA</item>
+    </string-array>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/cat_video"
+        android:layout_width="87dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Categorias"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <Spinner
+        android:id="@+id/categoria_video"
+        android:layout_width="359dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/Categorias_array"
+        android:prompt="@string/Categorias_prompt"
+        app:layout_constraintTop_toBottomOf="@+id/cat_video"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="13dp"></Spinner>
+
+    <EditText
+        android:id="@+id/nome_usuario_video"
+        android:layout_width="357dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:hint="Seu nome"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/categoria_video"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp" />
+
+    <EditText
+        android:id="@+id/descricao_video"
+        android:layout_width="355dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="4dp"
+        android:hint="Descrição"
+        android:inputType="textMultiLine"
+        android:maxLength="150"
+        app:layout_constraintTop_toBottomOf="@+id/nome_usuario_video"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <Button
+        android:id="@+id/registrar_video"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="28dp"
+        android:onClick="registrarVideo"
+        android:text="Registrar Video"
+        app:layout_constraintBottom_toTopOf="@+id/videoDenuncia"
+        app:layout_constraintEnd_toStartOf="@+id/visualizar_video"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descricao_video"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="28dp" />
+
+    <Button
+        android:id="@+id/visualizar_video"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="visualizarVideo"
+        android:text="Visualizar Video"
+        app:layout_constraintBottom_toTopOf="@+id/videoDenuncia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descricao_video"
+        android:layout_marginRight="32dp" />
+
+    <VideoView
+        android:id="@+id/videoDenuncia"
+        android:layout_width="325dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/cancelar_denuncia_video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/salvar_denuncia_video"
+        android:layout_width="122dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:onClick="salvarDenunciaVideo"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoDenuncia"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/cancelar_denuncia_video"
+        android:layout_width="121dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="cancelarDenunciaVideo"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toEndOf="@+id/salvar_denuncia_video" />
+</android.support.constraint.ConstraintLayout>
